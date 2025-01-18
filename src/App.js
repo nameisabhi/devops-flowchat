@@ -1,4 +1,7 @@
-import DevOpsFlow from './components/DevOpsFlow/DeveloperWorkspace';
+// src/App.js
+import React from 'react';
+import DevOpsFlow from './components/DevOpsFlow';
+import './styles/flowchart.css';
 
 function App() {
   return (
