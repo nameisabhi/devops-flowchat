@@ -37,10 +37,34 @@
   }
 }
 
+/* Box floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
 .animate-flow-right {
   animation: flowRight 2s infinite;
 }
 
 .animate-flow-down {
   animation: flowDown 2s infinite;
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Box glow effects */
+.box-glow {
+  box-shadow: 0 0 20px rgba(65, 105, 225, 0.2);
+  transition: box-shadow 0.3s ease;
+}
+
+.box-glow:hover {
+  box-shadow: 0 0 30px rgba(65, 105, 225, 0.4);
 }

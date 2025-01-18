@@ -1,10 +1,13 @@
-// Update src/components/DevOpsFlow/index.js to include the new component
+// Update src/components/DevOpsFlow/index.js
 import React from 'react';
 import DeveloperWorkspace from './DeveloperWorkspace';
 import CICD from './CICD';
 import BuildPackage from './BuildPackage';
 import Infrastructure from './Infrastructure';
 import CloudPlatform from './CloudPlatform';
+import GKEArchitecture from './GKEArchitecture';
+import ApplicationNamespaces from './ApplicationNamespaces';
+import ObservabilityStack from './ObservabilityStack';
 import { VerticalArrow } from './shared/Arrow';
 
 const DevOpsFlow = () => {
@@ -26,6 +29,12 @@ const DevOpsFlow = () => {
         <Infrastructure />
         <div className="-mt-4 mb-4"><VerticalArrow color="white" /></div>
         <CloudPlatform />
+        <div className="-mt-4 mb-4"><VerticalArrow color="white" /></div>
+        <GKEArchitecture />
+        <div className="-mt-4 mb-4"><VerticalArrow color="white" /></div>
+        <ApplicationNamespaces />
+        <div className="-mt-4 mb-4"><VerticalArrow color="white" /></div>
+        <ObservabilityStack />
       </div>
     </div>
   );
